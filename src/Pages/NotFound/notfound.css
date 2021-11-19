@@ -1,0 +1,20 @@
+.go-back {
+  text-align: center;
+}
+.goback-btn {
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: -100px;
+  position: absolute;
+  font-weight: 600;
+  background-color: #16426f;
+  height: 80px;
+  width: 270px;
+  border: 2px solid #2b90f5;
+  border-radius: 40px;
+}
+.back-btn {
+  text-decoration: none;
+  color: white;
+}
