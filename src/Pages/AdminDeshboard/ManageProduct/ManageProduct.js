@@ -15,7 +15,7 @@ const ManageProduct = () => {
   const [apartments, setapartments] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/apartments")
+    fetch("https://blooming-cove-73809.herokuapp.com/apartments")
       .then((res) => res.json())
       .then((data) => setapartments(data));
   }, []);
@@ -25,7 +25,7 @@ const ManageProduct = () => {
     if (proceed) {
       const remainingBooks = apartments.filter((items) => items._id !== id);
 
-      fetch(`http://localhost:5000/booking/${id}`, {
+      fetch(`https://blooming-cove-73809.herokuapp.com/booking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

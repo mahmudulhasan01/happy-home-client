@@ -25,7 +25,7 @@ const CheakOut = () => {
   } = apartmentDetails;
 
   useEffect(() => {
-    fetch(`http://localhost:5000/apartment/${id}`)
+    fetch(`https://blooming-cove-73809.herokuapp.com/apartment/${id}`)
       .then((res) => res.json())
       .then((data) => setApartmentDetails(data));
   }, [id]);

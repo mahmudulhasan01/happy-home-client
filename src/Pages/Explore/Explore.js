@@ -7,7 +7,7 @@ const Explore = () => {
   const [apartments, setApartments] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/apartments")
+    fetch("https://blooming-cove-73809.herokuapp.com/apartments")
       .then((res) => res.json())
       .then((data) => setApartments(data));
   }, []);

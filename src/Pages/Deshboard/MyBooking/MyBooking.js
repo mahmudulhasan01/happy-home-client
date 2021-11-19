@@ -15,7 +15,7 @@ const MyBooking = () => {
   //   const [deleteBook, setDeleteBook] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/booking?email=${user.email}`;
+    const url = `https://blooming-cove-73809.herokuapp.com/booking?email=${user.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setBooking(data));
@@ -26,7 +26,7 @@ const MyBooking = () => {
     if (proceed) {
       const remainingBooks = booking.filter((items) => items._id !== id);
 
-      fetch(`http://localhost:5000/booking/${id}`, {
+      fetch(`https://blooming-cove-73809.herokuapp.com/booking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

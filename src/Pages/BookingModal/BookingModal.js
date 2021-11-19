@@ -58,7 +58,7 @@ const BookingModal = ({
       apartmentDetails: apartmentDetails,
     };
     // send to the server
-    fetch("http://localhost:5000/booking", {
+    fetch("https://blooming-cove-73809.herokuapp.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

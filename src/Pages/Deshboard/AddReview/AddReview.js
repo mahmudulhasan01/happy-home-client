@@ -12,7 +12,7 @@ const AddReview = () => {
   const review = { value: value, user: user };
 
   const handleRatingSubmit = (review) => {
-    fetch("http://localhost:5000/rating", {
+    fetch("https://blooming-cove-73809.herokuapp.com/rating", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

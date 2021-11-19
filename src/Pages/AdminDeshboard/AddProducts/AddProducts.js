@@ -6,7 +6,7 @@ const AddProducts = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/apartments", data).then((res) => {
+    axios.post("https://blooming-cove-73809.herokuapp.com/apartments", data).then((res) => {
       console.log(res);
       if (res.data.insertedId) {
         alert("A place is Added Successfully.");

@@ -16,7 +16,7 @@ const ManageAllOrder = () => {
   console.log(bookings);
 
   useEffect(() => {
-    fetch("http://localhost:5000/bookings")
+    fetch("https://blooming-cove-73809.herokuapp.com/bookings")
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, []);
@@ -26,7 +26,7 @@ const ManageAllOrder = () => {
     if (proceed) {
       const remainingBooks = bookings.filter((items) => items._id !== id);
 
-      fetch(`http://localhost:5000/booking/${id}`, {
+      fetch(`https://blooming-cove-73809.herokuapp.com/booking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
